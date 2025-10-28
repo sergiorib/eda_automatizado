@@ -1,26 +1,14 @@
 {
   "tabelas": [
     {
-      "nome_tabela": "Clientes",
-      "caminho_arquivo": "dados/clientes.xlsx",
-      "tipo_arquivo": "excel",
-      "chave_primaria": "cliente_id",
-      "chaves_estrangeiras": [],
-      "colunas_numericas": ["idade", "renda_mensal", "score_risco"],
-      "colunas_categoricas": ["estado_civil", "uf", "canal_aquisicao"],
-      "colunas_tempo": ["data_cadastro", "data_ultima_compra"],
-      "colunas_booleanas": ["newsletter_ativa"],
-      "colunas_ignorar": ["endereco_completo"]
-    },
-    {
-      "nome_tabela": "Vendas",
-      "caminho_arquivo": "dados/transacoes/vendas_q3.csv",
+      "nome_tabela": "Cias seguradoras",
+      "caminho_arquivo": "C:/Users/User/Downloads/BaseCompleta/ses_cias.csv",
       "tipo_arquivo": "csv",
-      "chave_primaria": "id_transacao",
-      "chaves_estrangeiras": ["cliente_id", "produto_sku"],
-      "colunas_numericas": ["valor_bruto", "valor_desconto", "frete"],
-      "colunas_categoricas": ["tipo_pagamento", "status_pedido"],
-      "colunas_tempo": ["data_pedido"],
+      "chave_primaria": "Coenti",
+      "chaves_estrangeiras": [],
+      "colunas_numericas": [],
+      "colunas_categoricas": [],
+      "colunas_tempo": [],
       "colunas_booleanas": [],
       "colunas_ignorar": []
     }

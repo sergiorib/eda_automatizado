@@ -1,16 +1,19 @@
 # analises/__init__.py
-#
-# Este arquivo facilita o carregamento dinâmico das funções de análise
-# pelo main_runner.py, que usa importlib para acessar as funções pelo nome.
 
+# 1. Importa utilitários da base (se outros módulos precisarem deles)
+from .base import get_total_registros, get_iqr_boundaries, obter_percentual_nan
+
+# 2. Importa as funções principais de análise
 from .integridade import validacao_chave_primaria
 from .numericas import estatisticas_descritivas, teste_de_outliers_iqr, teste_de_outliers_zscore, analise_de_correlacao
 
-# Você pode adicionar as funções de outros módulos aqui conforme você as cria
-# Ex: from .categoricas import contagem_de_valores
-
-# O '__all__' define quais objetos são exportados quando um usuário faz 'from analises import *'
+# O '__all__' lista todas as funções que o pacote expõe
 __all__ = [
+    # Utilitários
+    'get_total_registros',
+    'get_iqr_boundaries',
+    'obter_percentual_nan',
+    # Análises Principais
     'validacao_chave_primaria',
     'estatisticas_descritivas',
     'teste_de_outliers_iqr',

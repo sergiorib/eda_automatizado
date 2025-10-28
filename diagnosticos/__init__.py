@@ -4,7 +4,7 @@
 # pelo main_runner.py.
 
 from .integridade_diag import diagnostico_chave_primaria
-from .numerico_diag import (
+from .numericas_diag import (
     diagnostico_estatistico,
     diagnostico_outliers_iqr,
     diagnostico_outliers_zscore,

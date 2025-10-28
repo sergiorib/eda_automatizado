@@ -1,0 +1,30 @@
+{
+  "resumo_execucao": {
+    "data_execucao": "2025-10-28T15:43:52.064731",
+    "total_tabelas": 1,
+    "total_analises_executadas": 1,
+    "total_alertas": 0,
+    "total_criticos": 1
+  },
+  "diagnosticos_registrados": [
+    {
+      "id_diagnostico": "PK_INTEGRIDADE_001",
+      "tabela": "Cias seguradoras",
+      "coluna": "Coenti",
+      "tipo_analise_origem": "validacao_chave_primaria",
+      "severidade": "CRÍTICO",
+      "categoria": "INTEGRIDADE",
+      "mensagem_curta": "Chave primária não é única.",
+      "detalhe_tecnico": "0.27% (2 registros) da PK 'Coenti' estão duplicados.",
+      "recomendacao": "Remover ou consolidar duplicados. Verificar o processo de geração/ETL da PK.",
+      "evidencia": {
+        "total_registros": 743,
+        "coluna_pk": "Coenti",
+        "nulos_count": 0,
+        "duplicados_count": 2,
+        "percentual_duplicados": 0.2691790040376851,
+        "percentual_nulos": 0.0
+      }
+    }
+  ]
+}

@@ -215,3 +215,7 @@ def analise_de_correlacao(df: pd.DataFrame, colunas: List[str], **parametros: An
             "pares_alta_correlacao": correlacoes_altas
         }
     }
+
+# ----------------------------------------------------------------------
+# 
+# ----------------------------------------------------------------------
