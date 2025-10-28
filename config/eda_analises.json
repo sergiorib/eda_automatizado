@@ -1,0 +1,18 @@
+{
+ "regras_globais_eda": [
+    {
+      "tipo_analise": "validacao_chave_primaria",
+      "alvo_tipo": ["chave_primaria"],
+      "funcao_analise": "validacao_chave_primaria",
+      "funcao_diagnostico": "diagnostico_chave_primaria",
+      "parametros": {"checar_unicidade": true, "checar_nulos": true}
+    },
+    {
+      "tipo_analise": "estatisticas_descritivas",
+      "alvo_tipo": ["colunas_numericas"],
+      "funcao_analise": "estatisticas_descritivas",
+      "funcao_diagnostico": "diagnostico_estatistico",
+      "parametros": {"percentis": [0.25, 0.5, 0.75]}
+    }
+  ]
+}
